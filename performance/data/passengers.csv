@@ -1,0 +1,4 @@
+inputName,address,city,state,zipCode,cardType,creditCardNumber,creditCardMonth,creditCardYear,nameOnCard
+QA Performance,123 Main Street,Campinas,SP,13000000,visa,4111111111111111,11,2030,QA Performance
+Test User,456 Test Avenue,Sao Paulo,SP,01000000,visa,4111111111111111,12,2031,Test User
+Automation User,789 Quality Road,Belo Horizonte,MG,30000000,amex,378282246310005,10,2030,Automation User

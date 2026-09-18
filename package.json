@@ -1,0 +1,43 @@
+{
+  "name": "qa-technical-challenge-agibank",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automação WEB e API com Cypress/Cucumber para o desafio técnico de QA.",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:web": "cypress run --env tags=@web",
+    "test:api": "cypress run --env tags=@api",
+    "test:smoke": "cypress run --env tags=@smoke",
+    "test:regression": "cypress run --env tags=@regression",
+    "test:headed": "cypress run --headed --browser chrome"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "28.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.8",
+    "cypress": "16.1.0",
+    "esbuild": "0.28.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/support/step_definitions/**/*.{js,ts}"
+    ],
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-report.html"
+    },
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-report.json"
+    },
+    "attachments": {
+      "addScreenshots": true,
+      "addVideos": true
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
