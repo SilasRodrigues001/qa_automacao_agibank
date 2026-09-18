@@ -1,6 +1,6 @@
 # Desafio Técnico QA — Web, API e Performance
 
-Este repositório contém a solução para os três blocos do desafio técnico de QA, com scripts constrúidos por Silas Rodrigues:
+Este repositório contém a solução para os três blocos do desafio técnico de QA, com scripts construídos por Silas Rodrigues:
 
 - automação WEB da pesquisa de artigos do Blog do Agi;
 - automação de API utilizando a Dog API;
